@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+        <forms action="/forms.html" method="GET">
+
+            <label for="textBox">Text Box:</label>
+            <input id="textBox" name="textBox" type="text" placeholder="Insert some text" value="">
+            
+                <br> <br>
+            <label for="colorPicker">Color Picker</label>
+            <input type="color" name="colorPicker">
+                <br><br>
+            <label for="email">Email Address</label>
+            <input id="email" type="email">
+                <br><br>
+            <label for="rangeSlider">Age</label>
+            <input type="range" id="rangeSlider" name="rangeSlider">
+            <span id="currentVal"></span>
+
+            <br><br>
+
+            <label for="timePicker">Time Picker</label>
+            <input type="time" id="timePicker" name="timePicker">
+            <br><br>
+            <label for="datePicker">Date Picker</label>
+            <input type="date" id="datePicker" name="datePicker">
+            <br><br>
+
+            <label for="searchBar">Search bar</label>
+            <input type="search" id="searchBar" name="searchBar">
+            <br><br>
+            
+            <label for="urlBar">URL:</label>
+            <input type="url" id="urlBar" name="urlBar">
+            
+            <br><br>
+            <label for="aboutMe">About Me:</label><br>
+            <textarea name="aboutMe" id="aboutMe" rows="" cols="">Hello World</textarea>
+
+
+            <br><br>
+            <input type="submit" value="Submit the stuff">
+            <br><br>
+            
+        </forms>
+    
+</body>
+</html>
