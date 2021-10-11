@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 2 homework</title>
+    <link rel="stylesheet" href="/cssmediaqueries/css/day2.css">
 </head>
 <body>
 
@@ -16,13 +17,13 @@
             <th>dokie</th>
         </tr>
         <tr>
-            <th>Person</th>
+            <td>Thing 1</td>
             <td>Sally</td>
             <td>Jenkins</td>
             <td>35</td>
         </tr>
         <tr>
-            <th>Place</th>
+            <td>thing 2</td>
             <td>City Close</td>
             <td>Apples</td>
             <td>Animals</td>
@@ -31,37 +32,42 @@
     <p id="unique">this one has an id attribute</p>
     <p class="sounds">This one is a class attribute.</p>
 
-    <label for="name">What is your name?</label>
-
     <form>
-        <input type="text" name="name" id="name" placeholder="namesssss">
+        <label for="name">What is your name?</label><br>
+        <input type="text" name="name" id="name" placeholder="namesssss"><br><br>
+
+        <label for="food">What is your favorite food?</label><br>
+        <input type="checkbox" name="food" id="food">
+        <label for="food">Fast Food</label><br>
+        <input type="checkbox" name="food" id="food">
+        <label for="food">Fine Dining</label><br>
+        <input type="checkbox" name="food" id="food">
+        <label for="food">Summer BBQ</label>
+
+        <h1>What is your favorite color?</h1>
+        <input type="radio" name="color" id="color">
+        <label for="color">Royal Blue</label>
+        <input type="radio" name="color" id="color">
+        <label for="color">Banana Yello</label>
+        <input type="radio" name="color" id="color">
+        <label for="color">Grass Green</label>
+
+        <h1>How are you feeling?</h1>
+        <textarea id="feelings" name="feelings" rows="4" cols="50" >Tell in few words how you are feeling</textarea><br><br>
+
+        <label for="Pick">Pick One:</label>
+        <select name="Pick" id="Pick">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+        
     </form>
 
+    <div style="background-color: aqua; color: brown; padding: 20px;">
+        <h1 >Inline elements</h1>
+        <p>Lorem ipsum, dolor sit <span style="background-color: greenyellow; color: mediumturquoise; padding: 10px;">one word</span> amet consectetur adipisicing elit. Placeat nulla ea saepe hic quas distinctio libero<br><br> perferendis aliquid voluptatum animi a earum voluptate ducimus cumque nobis<br> architecto reiciendis eos omnis deserunt, amet fugiat nostrum. Libero accusamus, voluptate ipsa iste commodi possimus molestias! Quasi dicta pariatur ea corrupti numquam, quae nam!</p>
+    </div>
 
-NOTE: steps 8 - 15 will all be a part of the same form as above
-8) Create 3 more inputs (for a total of 4 in this form so far), each should have a label and be of a type that has not been previously used.
-9) Create an <h1> element with the inner HTML set to "What is your favorite color?" e.g. <h1>What is your favorite color?</h1>
-10) Create two radio buttons (multiple choice), they should...
-- Only be able to select one at a time, HINT: same name attribute value
-- They should have a <label> element before them to label each radio button option
-- They should have a value that is appropriate to the label inner HTML
-- Carry a value associated with the corresponding label
-11) Create an <h1> element with the inner HTML set to "What are your favorite foods?"
-12) Create at least two checkboxes, they should...
-- All have the same value for the name attribute
-- All should have a <label> element before them to label each checkbox option
-- They should have a value that is appropriate to the label inner HTML
-13) Include one <textarea> element
-14) A select dropdown, it should...
-- A name attribute (the select element)
-- Have at least two option element children with value attributes
-15) A submit button, can be either an input element or a button element but must have a type of submit
-16) Create a div element with a paragraph element nested inside of it
-17) The paragraph element should have some dummy text, choose one word from the dummy text and surround it in a <span> tag
-18) Enter three <br> tags
-19) Create an h1 element with the innerHTML set to inline elements
-20) Create 3 different inline elements
-21) Create an h1 element with the innerHTML set to block elements
-22) Create 3 different block elements
 </body>
 </html>
